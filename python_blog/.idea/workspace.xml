@@ -34,6 +34,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates\blog" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="python_blog" type="Python.DjangoServer" factoryName="Django server">
@@ -69,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605869952444</updated>
-      <workItem from="1605870030241" duration="4100000" />
+      <workItem from="1605870030241" duration="9402000" />
     </task>
     <servers />
   </component>
@@ -77,21 +83,21 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1232" height="198" key="GridCell.Tab.0.bottom" timestamp="1605871923535">
+    <state width="1259" height="304" key="GridCell.Tab.0.bottom" timestamp="1605882701557">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1232" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605871923535" />
-    <state width="1232" height="198" key="GridCell.Tab.0.center" timestamp="1605871923535">
+    <state width="1259" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605882701557" />
+    <state width="1259" height="304" key="GridCell.Tab.0.center" timestamp="1605882701557">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1232" height="198" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605871923535" />
-    <state width="1232" height="198" key="GridCell.Tab.0.left" timestamp="1605871923535">
+    <state width="1259" height="304" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605882701557" />
+    <state width="1259" height="304" key="GridCell.Tab.0.left" timestamp="1605882701557">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1232" height="198" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605871923535" />
-    <state width="1232" height="198" key="GridCell.Tab.0.right" timestamp="1605871923535">
+    <state width="1259" height="304" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605882701557" />
+    <state width="1259" height="304" key="GridCell.Tab.0.right" timestamp="1605882701557">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1232" height="198" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605871923535" />
+    <state width="1259" height="304" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1605882701557" />
   </component>
 </project>

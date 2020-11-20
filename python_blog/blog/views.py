@@ -1,12 +1,15 @@
 from django.shortcuts import render
 
-
 # Create your views here.
+from blog.models import Post
 
 
 def home(request):
-    return render(request, 'home.html')
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'blog/home.html', context)
 
 
 def about(request):
-    return render(request, 'about.html', {'title': 'About'})
+    return render(request, 'blog/about.html', {'title': 'About'})
