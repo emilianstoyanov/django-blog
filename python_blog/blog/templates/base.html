@@ -1,0 +1,58 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/1387/1387537.svg">
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
+
+    {% if title %}
+        <title>Python - Blog - {{ title }}</title>
+    {% else %}
+        <title>Python -Blog</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="site-header">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand mr-4" href="{% url 'home-page' %}"> Pyth<i class="fa fa-drupal"></i>n - Blog</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+                    aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="{% url 'home-page' %}"><i class="fa fa-home"></i> Home</a>
+                    <a class="nav-item nav-link" href="{% url 'about-page' %}"><i class="fa fa-user"></i> About</a>
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-address-book"></i> Contact</a>
+                </div>
+                <!-- Navbar Right Side -->
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-sign-in"></i> Login</a>
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-registered"></i> Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+
+</body>
+</html>
