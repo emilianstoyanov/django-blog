@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanks!</title>
+</head>
+<style>
+    h1 {
+        text-align: center
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    button {
+        width: 500px;
+        height: 40px;
+
+    }
+
+    body {
+        background-image: url("https://i.pinimg.com/originals/df/f1/55/dff15531f364a0a76b0e8d6cf64ee6b1.jpg");
+
+    }
+
+</style>
+<div class="center">
+    <a class="nav-item nav-link" href="{% url 'home-page' %}">
+        <button name="text" class="test" type="button">Back to home page</button>
+    </a>
+</div>
+
+<body>
+<div>
+    <h1>Thank you for contacting us!</h1>
+
+</div>
+
+</body>
+</html>

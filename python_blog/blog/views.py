@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from blog.models import Post
+from blog.models import Post, Contact
 
 
 def home(request):
@@ -16,4 +16,14 @@ def about(request):
 
 
 def contact(request):
+    if request.method == 'POST':
+        contact = Contact()
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        contact.name = name
+        contact.email = email
+        contact.subject = subject
+        contact.save()
+        return render(request, 'blog/home.html')
     return render(request, 'blog/contact.html')
