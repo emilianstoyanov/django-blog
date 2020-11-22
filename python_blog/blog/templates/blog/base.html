@@ -16,9 +16,8 @@
     {% if title %}
         <title>Python - Blog - {{ title }}</title>
     {% else %}
-        <title>Python -Blog</title>
+        <title>Python-Blog</title>
     {% endif %}
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -29,7 +28,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
 
-            <a class="navbar-brand mr-4" href="{% url 'home-page' %}"> Pyth<i class="fa fa-drupal"></i>n - Blog</a>
+            <a class="navbar-brand mr-4" href="{% url 'home-page' %}"> Pyth<i class="fa fa-drupal"></i>n-Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +38,7 @@
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="{% url 'home-page' %}"><i class="fa fa-home"></i> Home</a>
                     <a class="nav-item nav-link" href="{% url 'about-page' %}"><i class="fa fa-user"></i> About</a>
-                    <a class="nav-item nav-link" href="{% url 'news-page' %}"><i class="fa fa-newspaper-o"></i> News</a>
+                    <a class="nav-item nav-link" href="{% url 'news-page' %}"><i class="fa fa-newspaper-o"></i> PythonNews</a>
                     <a class="nav-item nav-link" href="{% url 'contact-page' %}"><i class="fa fa-address-book"></i>
                         Contact</a>
                 </div>
@@ -53,9 +52,63 @@
     </nav>
     {% block body %}
     {% endblock %}
-</header>
 
-{% block content %}{% endblock %}
+</header>
+<main role="main" class="container">
+
+    <div class="row">
+        <div class="col-md-8">
+
+            {% block content %}{% endblock %}
+        </div>
+
+        <div class="col-md-4">
+            <style type="text/css">
+                body {
+                }
+
+                .clock {
+                    position: absolute;
+                    top: 60px;
+                    transform: translateX(-5%) translateY(-95%);
+                    color: #3c3434;
+                    font-size: 230%;
+                }
+
+            </style>
+            <div id="MyClockDisplay" class="clock"></div>
+            <script type="text/javascript">
+
+                function showTime() {
+                    let date = new Date();
+                    let h = date.getHours(); // 0 - 23
+                    let m = date.getMinutes(); // 0 - 59
+                    let s = date.getSeconds(); // 0 - 59
+                    let session = "AM";
+
+                    {#if (h >= 12) {#}
+                    {#    h = h - 12;#}
+                    {#    session = "PM";#}
+
+                    {#if (h === 0) {#}
+                    {#    h = 12;#}
+
+                    {##}
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    let time = h + ":" + m + ":" + s + " " + session;
+                    document.getElementById("MyClockDisplay").innerText = time;
+                    document.getElementById("MyClockDisplay").textContent = time;
+
+                    setTimeout(showTime, 1000);
+                }
+
+                showTime();
+            </script>
+        </div>
+    </div>
+</main>
 
 
 </body>

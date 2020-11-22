@@ -41,7 +41,8 @@ p {
 
 
 .article-title {
-    color: #452020;
+    color: #966F33
+;
 }
 
 
@@ -66,7 +67,8 @@ a.article-title:hover {
 .article-metadata {
     padding-bottom: 1px;
     margin-bottom: 10px;
-    border-bottom: 1px solid #452020
+    border-bottom: 1px solid #966F33
+
 }
 
 .article-metadata a:hover {

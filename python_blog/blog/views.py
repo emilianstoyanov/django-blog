@@ -39,3 +39,7 @@ def contactUsers(request):
         contact.save()
         return render(request, 'blog/contact_final.html')
     return render(request, 'blog/contact.html')
+
+
+def clock(request):
+    return render(request, 'blog/digital_clock.html')
