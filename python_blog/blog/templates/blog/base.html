@@ -38,14 +38,15 @@
                 <div class="navbar-nav mr-auto">
                     <a class="nav-item nav-link" href="{% url 'home-page' %}"><i class="fa fa-home"></i> Home</a>
                     <a class="nav-item nav-link" href="{% url 'about-page' %}"><i class="fa fa-user"></i> About</a>
-                    <a class="nav-item nav-link" href="{% url 'news-page' %}"><i class="fa fa-newspaper-o"></i> PythonNews</a>
+                    <a class="nav-item nav-link" href="{% url 'news-page' %}"><i class="fa fa-newspaper-o"></i>
+                        PythonNews</a>
                     <a class="nav-item nav-link" href="{% url 'contact-page' %}"><i class="fa fa-address-book"></i>
                         Contact</a>
                 </div>
                 <!-- Navbar Right Side -->
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#"><i class="fa fa-sign-in"></i> Login</a>
-                    <a class="nav-item nav-link" href="#"><i class="fa fa-registered"></i> Register</a>
+                    <a class="nav-item nav-link" href="{% url 'register' %}"><i class="fa fa-registered"></i>
+                        Register</a>
                 </div>
             </div>
         </div>
