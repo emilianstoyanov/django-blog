@@ -32,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -51,19 +51,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/templates/blog" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\users" />
-      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\users\templates\users" />
-      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates\blog" />
-      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates\blog" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates\blog" />
+      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\users" />
+      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\users\templates\users" />
+      <recent name="C:\Users\emili\Documents\GitHub\python-blog\python_blog\blog\templates" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,7 +124,8 @@
       <workItem from="1606245828848" duration="56000" />
       <workItem from="1606290276887" duration="3253000" />
       <workItem from="1606573463505" duration="5500000" />
-      <workItem from="1606586226476" duration="4581000" />
+      <workItem from="1606586226476" duration="5289000" />
+      <workItem from="1606734870035" duration="4093000" />
     </task>
     <servers />
   </component>
@@ -153,25 +154,25 @@
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
     <state x="-1721" y="277" key="FileChooserDialogImpl/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606240672453" />
-    <state width="1042" height="170" key="GridCell.Tab.0.bottom" timestamp="1606586117903">
+    <state width="1017" height="170" key="GridCell.Tab.0.bottom" timestamp="1606595523847">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1042" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606586117903" />
+    <state width="1017" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606595523847" />
     <state width="1445" height="185" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606292967214" />
-    <state width="1042" height="170" key="GridCell.Tab.0.center" timestamp="1606586117903">
+    <state width="1017" height="170" key="GridCell.Tab.0.center" timestamp="1606595523847">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1042" height="170" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606586117903" />
+    <state width="1017" height="170" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606595523847" />
     <state width="1445" height="185" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606292967213" />
-    <state width="1042" height="170" key="GridCell.Tab.0.left" timestamp="1606586117903">
+    <state width="1017" height="170" key="GridCell.Tab.0.left" timestamp="1606595523847">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1042" height="170" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606586117903" />
+    <state width="1017" height="170" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606595523847" />
     <state width="1445" height="185" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606292967213" />
-    <state width="1042" height="170" key="GridCell.Tab.0.right" timestamp="1606586117903">
+    <state width="1017" height="170" key="GridCell.Tab.0.right" timestamp="1606595523847">
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
-    <state width="1042" height="170" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606586117903" />
+    <state width="1017" height="170" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606595523847" />
     <state width="1445" height="185" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606292967213" />
   </component>
 </project>

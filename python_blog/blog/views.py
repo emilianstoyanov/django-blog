@@ -1,7 +1,9 @@
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render
 
 # Create your views here.
 from blog.models import Post, Contact
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
 
 
 def home(request):
@@ -13,6 +15,45 @@ def home(request):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+
+class PostListView(ListView):
+    model = Post
+    template_name = 'blog/home.html'
+    context_object_name = 'posts'
+    ordering = ['-date_posted']
+    # броя постовен а една страница
+    paginate_by = 4
+
+
+class PostDetailView(DetailView):
+    model = Post
+
+
+class PostCreateView(LoginRequiredMixin, CreateView):
+    model = Post
+    fields = ['title', 'content']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+
+class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    model = Post
+    fields = ['title', 'content']
+
+    # когато пишем от страницата пост, да не хвърля грешка,
+    # а да ни връща на страницата, на самият пост
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        return False
 
 
 def news(request):
