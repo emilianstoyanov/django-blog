@@ -3,11 +3,18 @@ body {
     margin-top: 7rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #3c3737;
+}
+
 p {
     letter-spacing: 1px;
     text-align: left;
 }
 
+ul {
+    margin: 0;
+}
 
 .bg-steel {
     background-color: #302c2c;
@@ -31,12 +38,12 @@ p {
 
 .content-section {
     background: #e3dede;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border: 0 solid #e0d6d6;
 
     /**оформяне на посответе*!*/
-    border-radius: 60px;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-bottom: 17px;
 }
 
 
@@ -59,7 +66,7 @@ a.article-title:hover {
 .article-img {
     height: 100px;
     width: 100px;
-    margin-right: 5px;
+    margin-right: 20px;
 }
 
 
@@ -84,15 +91,15 @@ a.article-title:hover {
 
 
 .account-img {
-    height: 205px;
-    width: 205px;
+    height: 125px;
+    width: 125px;
     margin-right: 20px;
     margin-bottom: 16px;
 }
 
 
 .account-heading {
-    font-size: 2.0rem;
+    font-size: 2.2rem;
 }
 
 

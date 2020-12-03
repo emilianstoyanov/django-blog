@@ -26,10 +26,20 @@ class PostListView(ListView):
     template_name = 'blog/home.html'
     context_object_name = 'posts'
     ordering = ['-date_posted']
-    # броя постовен а една страница
     paginate_by = 4
 
 
+class UserPostListView(ListView):
+    model = Post
+    template_name = 'blog/user_posts.html'
+    context_object_name = 'posts'
+    # броя постовен а една страница
+    paginate_by = 5
+
+    # при натискане на името на потребител, излизат всички негови публикации
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return Post.objects.filter(author=user).order_by('-date_posted')
 
 
 class PostDetailView(DetailView):

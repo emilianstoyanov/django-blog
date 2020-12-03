@@ -17,7 +17,11 @@ def register(request):
     return render(request, 'users/register.html', {'form': form})
 
 
-@login_required
+# декоратора се избира за пряк пък
+
+# https://stackoverflow.com/questions/52351756/django-typeerror-save-got-an-unexpected-keyword-argument-force-insert
+
+# @login_required
 def profile(request):
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=request.user)

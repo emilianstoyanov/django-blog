@@ -6,10 +6,12 @@ from users.models import Profile
 
 
 class UserRegisterForm(UserCreationForm):
+    # слагаме форма за мейл
     email = forms.EmailField()
 
     class Meta:
         model = User
+        # подреждаме формата
         fields = ['username', 'email', 'password1', 'password2']
 
 
