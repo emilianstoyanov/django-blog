@@ -51,7 +51,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blog/templates/blog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -130,7 +130,8 @@
       <workItem from="1606848507922" duration="1175000" />
       <workItem from="1606979440087" duration="97000" />
       <workItem from="1606979605401" duration="6895000" />
-      <workItem from="1606989012578" duration="5504000" />
+      <workItem from="1606989012578" duration="5816000" />
+      <workItem from="1607080188219" duration="4200000" />
     </task>
     <servers />
   </component>
@@ -159,25 +160,25 @@
       <screen x="-2560" y="0" width="2560" height="1080" />
     </state>
     <state x="-1721" y="277" key="FileChooserDialogImpl/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1606980244772" />
-    <state width="1098" height="66" key="GridCell.Tab.0.bottom" timestamp="1607004911080">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state width="1877" height="190" key="GridCell.Tab.0.bottom" timestamp="1607083843559">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1098" height="66" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1607004911080" />
-    <state width="1453" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606744707568" />
-    <state width="1098" height="66" key="GridCell.Tab.0.center" timestamp="1607004911080">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state width="1877" height="190" key="GridCell.Tab.0.bottom/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1607083843559" />
+    <state width="1877" height="190" key="GridCell.Tab.0.center" timestamp="1607083843559">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1098" height="66" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1607004911080" />
-    <state width="1453" height="170" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606744707567" />
-    <state width="1098" height="66" key="GridCell.Tab.0.left" timestamp="1607004911080">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state width="1877" height="190" key="GridCell.Tab.0.center/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1607083843559" />
+    <state width="1877" height="190" key="GridCell.Tab.0.left" timestamp="1607083843558">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1098" height="66" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1607004911080" />
-    <state width="1453" height="170" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606744707567" />
-    <state width="1098" height="66" key="GridCell.Tab.0.right" timestamp="1607004911080">
-      <screen x="-2560" y="0" width="2560" height="1080" />
+    <state width="1877" height="190" key="GridCell.Tab.0.left/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1607083843558" />
+    <state width="1877" height="190" key="GridCell.Tab.0.right" timestamp="1607083843559">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1098" height="66" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@-2560.0.2560.1080" timestamp="1607004911080" />
-    <state width="1453" height="170" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1606744707568" />
+    <state width="1877" height="190" key="GridCell.Tab.0.right/0.0.1920.1080/-2560.0.2560.1080@0.0.1920.1080" timestamp="1607083843559" />
   </component>
 </project>
