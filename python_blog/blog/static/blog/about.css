@@ -213,7 +213,7 @@ p {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #ffffff;
     opacity: .7;
     z-index: -1;
 }
@@ -457,7 +457,7 @@ p {
 }
 
 #about .col-right .cta {
-    color: black;
+    color: #ffffff;
     margin-bottom: 50px;
     padding: 10px 20px;
     font-size: 2rem;
@@ -505,12 +505,12 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0px 0px 18px 0 #0000002c;
+    box-shadow: 0px 0px 18px 0 rgba(255, 255, 255, 0.17);
     transition: .3s ease box-shadow;
 }
 
 #contact .contact-item:hover {
-    box-shadow: 0px 0px 5px 0 #0000002c;
+    box-shadow: 0px 0px 5px 0 rgba(196, 21, 21, 0.17);
 }
 
 #contact .icon {

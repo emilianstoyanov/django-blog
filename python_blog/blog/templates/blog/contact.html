@@ -1,132 +1,138 @@
+{% extends 'blog/base.html' %}
 {% load static %}
+{% block body %}
 
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
 
-    <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/1387/1387537.svg">
+        <link rel="icon" type="image/png" href="https://www.flaticon.com/svg/static/icons/svg/1387/1387537.svg">
 
-    <title>Contact</title>
-</head>
+        <title>Contact</title>
+    </head>
 
-{#bootstrap button#}
-<style type="text/css">
-    .myButton {
-        background: #63b8ee linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
-        border-radius: 6px;
-        border: 1px solid #3866a3;
-        display: inline-block;
-        cursor: pointer;
-        color: #14396a;
-        font-family: Arial, serif;
-        font-size: 15px;
-        font-weight: bold;
-        padding: 14px 30px;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px #7cacde;
-    }
+    {#bootstrap button#}
+    <style type="text/css">
+        .myButton {
+            background: #63b8ee linear-gradient(to bottom, #63b8ee 5%, #468ccf 100%);
+            border-radius: 6px;
+            border: 1px solid #3866a3;
+            display: inline-block;
+            cursor: pointer;
+            color: #14396a;
+            font-family: Arial, serif;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 14px 30px;
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #7cacde;
+        }
 
-    .myButton:hover {
-        background: #468ccf linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
-    }
+        .myButton:hover {
+            background: #468ccf linear-gradient(to bottom, #468ccf 5%, #63b8ee 100%);
+        }
 
-    .myButton:active {
-        position: center;
-        top: 20px;
-    }
-
-
-    body {
-        background-image: url("https://i.pinimg.com/originals/df/f1/55/dff15531f364a0a76b0e8d6cf64ee6b1.jpg");
-        background-color: #cccccc;
-        /*background: #BC8F8F;*/
-        color: #333333;
-        margin-top: 5rem;
-    }
-
-</style>
-<body>
-<div class="container">
-    <a href="{% url 'home-page' %}" class="myButton">Home</a>
-</div>
+        .myButton:active {
+            position: center;
+            top: 20px;
+        }
 
 
-<h1 class="text-center">CONTACT FORM</h1>
-<div class="container">
-    <form class="" method="post">
-        {% csrf_token %}
-        <div class="form-group">
-            <label for="fname"></label>
-            <input name="name" type="text" id="fname" class="form-control" placeholder="Your name.." required>
+        body {
 
-            <label for="exampleInputEmail1"></label>
-            <input name='email' class="form-control" id="exampleInputEmail1" placeholder="Your email.."
-                   aria-describedby="emailHelp" required>
+            background-color: #cccccc;
+            /*background: #BC8F8F;*/
+            color: #333333;
+            margin-top: 5rem;
+        }
 
-            <label for="subject"></label>
-            <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
-                      style="height:200px"></textarea>
-
-            <input type="submit" class="btn btn-success btn-lg mt-1 ml-4" value="Submit">
-        </div>
-    </form>
+    </style>
+    <body>
+    <div class="container">
+        <a href="{% url 'home-page' %}" class="myButton">Home</a>
+    </div>
 
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'blog/about.css' %}">
+    <h1 class="text-center" style="color: white">CONTACT FORM</h1>
+    <div class="container">
+        <form class="" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="fname"></label>
+                <input name="name" type="text" id="fname" class="form-control" placeholder="Your name.." required>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact container">
+                <label for="exampleInputEmail1"></label>
+                <input name='email' class="form-control" id="exampleInputEmail1" placeholder="Your email.."
+                       aria-describedby="emailHelp" required>
 
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/android/72/000000/facebook-new.png"/></div>
-                    <div class="contact-info">
-                        <a href="https://www.facebook.com/emilian.e.stoyanov/"><h1>Facebook</h1></a>
-                        <h2>Welcome to mine Facebook</h2>
+                <label for="subject"></label>
+                <textarea class="form-control" id="subject" name="subject" placeholder="Write something.."
+                          style="height:200px"></textarea>
 
+                <input type="submit" class="btn btn-success btn-lg mt-1 ml-4" value="Submit">
+            </div>
+        </form>
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'blog/about.css' %}">
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="contact container">
+
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/android/72/000000/facebook-new.png"/></div>
+                        <div class="contact-info">
+                            <a href="https://www.facebook.com/emilian.e.stoyanov/"><h1>Facebook</h1></a>
+                            <h2>Welcome to mine Facebook</h2>
+
+                        </div>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/ios-filled/72/000000/linkedin.png"/></div>
-                    <div class="contact-info">
-                        <a href="https://www.linkedin.com/in/emilian-stoyanov-1aa7051ba/"><h1>Linkedin</h1></a>
-                        <h2>Welcome to mine Linkedin</h2>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/72/000000/linkedin.png"/></div>
+                        <div class="contact-info">
+                            <a href="https://www.linkedin.com/in/emilian-stoyanov-1aa7051ba/"><h1>Linkedin</h1></a>
+                            <h2>Welcome to mine Linkedin</h2>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/ios-filled/72/000000/github.png"/></div>
-                    <div class="contact-info">
-                        <a href="https://github.com/EmilianStoyanov"><h1>GitHub</h1></a>
-                        <h2>Welcome to mine GitHub</h2>
+                    <div class="contact-item">
+                        <div class="icon"><img src="https://img.icons8.com/ios-filled/72/000000/github.png"/></div>
+                        <div class="contact-info">
+                            <a href="https://github.com/EmilianStoyanov"><h1>GitHub</h1></a>
+                            <h2>Welcome to mine GitHub</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- End Contact Section -->
+        </section>
+        <!-- End Contact Section -->
 
 
-    {#    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">#}
-    {#        <i class="fa fa-facebook-official w3-hover-opacity"></i>#}
-    {#        <i class="fa fa-instagram w3-hover-opacity"></i>#}
-    {#        <i class="fa fa-snapchat w3-hover-opacity"></i>#}
-    {#        <i class="fa fa-pinterest-p w3-hover-opacity"></i>#}
-    {#        <i class="fa fa-twitter w3-hover-opacity"></i>#}
-    {#        <i class="fa fa-linkedin w3-hover-opacity"></i>#}
-    {#        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"#}
-    {#                                           class="w3-hover-text-green">w3.css</a></p>#}
-    {#        <!-- End footer -->#}
-    {#    </footer>#}
-</div>
-</body>
-</html>
+        {#    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">#}
+        {#        <i class="fa fa-facebook-official w3-hover-opacity"></i>#}
+        {#        <i class="fa fa-instagram w3-hover-opacity"></i>#}
+        {#        <i class="fa fa-snapchat w3-hover-opacity"></i>#}
+        {#        <i class="fa fa-pinterest-p w3-hover-opacity"></i>#}
+        {#        <i class="fa fa-twitter w3-hover-opacity"></i>#}
+        {#        <i class="fa fa-linkedin w3-hover-opacity"></i>#}
+        {#        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"#}
+        {#                                           class="w3-hover-text-green">w3.css</a></p>#}
+        {#        <!-- End footer -->#}
+        {#    </footer>#}
+    </div>
+    </body>
+    </html>
+    {% block python_tricks %}{% endblock %}
+
+{% endblock %}
