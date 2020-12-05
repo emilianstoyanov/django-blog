@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -70,9 +72,58 @@
                       style="height:200px"></textarea>
 
             <input type="submit" class="btn btn-success btn-lg mt-1 ml-4" value="Submit">
-
         </div>
     </form>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/about.css' %}">
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>0884803257</h2>
+                        <h2></h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2></h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+
+    {#    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">#}
+    {#        <i class="fa fa-facebook-official w3-hover-opacity"></i>#}
+    {#        <i class="fa fa-instagram w3-hover-opacity"></i>#}
+    {#        <i class="fa fa-snapchat w3-hover-opacity"></i>#}
+    {#        <i class="fa fa-pinterest-p w3-hover-opacity"></i>#}
+    {#        <i class="fa fa-twitter w3-hover-opacity"></i>#}
+    {#        <i class="fa fa-linkedin w3-hover-opacity"></i>#}
+    {#        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"#}
+    {#                                           class="w3-hover-text-green">w3.css</a></p>#}
+    {#        <!-- End footer -->#}
+    {#    </footer>#}
 </div>
 </body>
 </html>

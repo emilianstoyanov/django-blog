@@ -1,6 +1,146 @@
 {% extends 'blog/base.html' %}
-
+{% load static %}
 {% block body %}
+    {#    <!DOCTYPE html>#}
+    {#    <html lang="en">#}
+    {#    <title></title>#}
+    {#    <meta charset="UTF-8">#}
+    {#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
+    {#    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">#}
+    {#    <link rel="stylesheet" href="">#}
+    {#    <style>#}
+    {##}
+    {##}
+    {#    </style>#}
+    {#    <body class="w3-light-blue w3-content" style="max-width:1000px">#}
+    {##}
+    {##}
+    {#    <!-- !PAGE CONTENT! -->#}
+    {#    <div class="w3-main" style="margin-left:100px">#}
+    {##}
+    {#        <!-- Push down content on small screens -->#}
+    {#        <div class="w3-hide-large" style="margin-top:83px"></div>#}
+    {##}
+    {#        <!-- Photo grid -->#}
+    {#        <div class="w3-row">#}
+    {#            <div class="w3-third">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#            </div>#}
+    {##}
+    {#            <div class="w3-third">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#                <img src="" style="width:100%" onclick="onClick(this)"#}
+    {#                     alt="">#}
+    {#            </div>#}
+    {#        </div>#}
+    {##}
+    {#        <!-- About section -->#}
+    {#        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">#}
+    {#            <h4><b>About Me</b></h4>#}
+    {#            <img src="https://avatars0.githubusercontent.com/u/68276889?s=460&u=974da9914e8dc935bf0eb4fc8b776869618ef83e&v=4"#}
+    {#                 alt="Me" class="w3-image w3-padding-32" width="300" height="500">#}
+    {#            <div class="w3-content w3-justify" style="max-width:800px">#}
+    {#                <h4>My Name</h4>#}
+    {#                <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed#}
+    {##}
+    {##}
+    {#                </p>#}
+    {#                <p>email: emilian.stoyanov@outlook.com</p>#}
+    {#                <p>tel: +359 884 80 32 57</p>#}
+    {##}
+    {#                <hr class="w3-opacity">#}
+    {#                <h4 class="w3-padding-16">Skills</h4>#}
+    {##}
+    {#                <p class="w3-wide">Python (Programming Language)</p>#}
+    {#                <div class="w3-white">#}
+    {#                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:95%">95%</div>#}
+    {#                </div>#}
+    {##}
+    {#                <p class="w3-wide">Object-Oriented Programming (OOP)</p>#}
+    {#                <div class="w3-white">#}
+    {#                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:85%">85%</div>#}
+    {#                </div>#}
+    {##}
+    {#                <p class="w3-wide">Django</p>#}
+    {#                <div class="w3-white">#}
+    {#                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>#}
+    {#                </div>#}
+    {#                <p class="w3-wide">Django</p>#}
+    {#                <div class="w3-white">#}
+    {#                    <div class="w3-container w3-padding-small w3-center w3-grey" style="width:80%">80%</div>#}
+    {#                </div>#}
+    {##}
+    {#            </div>#}
+    {#        </div>#}
+    {#    </div>#}
 
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/about.css' %}">
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+            <div><h1 class="section-title">Contact <span>info</span></h1></div>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+                    <div class="contact-info">
+                        <h1>Phone</h1>
+                        <h2>+1 234 123 1234</h2>
+                        <h2>+1 234 123 1234</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+                    <div class="contact-info">
+                        <h1>Email</h1>
+                        <h2>info@gmail.com</h2>
+                        <h2>abcd@gmail.com</h2>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+                    <div class="contact-info">
+                        <h1>Address</h1>
+                        <h2>Fatikchhari, Chittagong, Bangladesh</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+    </body>
+    </html>
 {% endblock %}
