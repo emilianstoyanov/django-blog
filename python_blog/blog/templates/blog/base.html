@@ -43,8 +43,12 @@
                     <a class="nav-item nav-link" href="{% url 'about-page' %}"><i class="fa fa-user"></i> About me</a>
                     <a class="nav-item nav-link" href="{% url 'news-page' %}"><i class="fa fa-newspaper-o"></i>
                         PythonNews</a>
-                    <a class="nav-item nav-link" href="{% url 'contact-page' %}"><i class="fa fa-address-book"></i>
-                        Contact</a>
+                    {% if user.is_authenticated %}
+
+                        <a class="nav-item nav-link" href="{% url 'contact-page' %}"><i class="fa fa-address-book"></i>
+                            Contact</a>
+                    {% endif %}
+
 
                 </div>
                 <!-- Navbar Right Side -->
@@ -74,7 +78,6 @@
 </header>
 
 <main role="main" class="container">
-
 
 
     <div class="row">
@@ -107,15 +110,18 @@
                     <div class="form-group">
 
                         <p class="h5 text-muted text-center"></p>
-                        <p><img class="img-fluid rounded" src="https://programming-review.com/wp-content/uploads/2020/01/swapping-variables.jpg" width="738" height="490" alt="Python Tricks Dictionary Merge"></p>
-
-
-                        <p><img class="img-fluid rounded" src="https://i0.wp.com/gymnasiumismaning.de/wp-content/uploads/2019/10/pytrick-dict-merge.4201a0125a5e.png"
+                        <p><img class="img-fluid rounded"
+                                src="https://programming-review.com/wp-content/uploads/2020/01/swapping-variables.jpg"
                                 width="738" height="490" alt="Python Tricks Dictionary Merge"></p>
 
 
+                        <p><img class="img-fluid rounded"
+                                src="https://i0.wp.com/gymnasiumismaning.de/wp-content/uploads/2019/10/pytrick-dict-merge.4201a0125a5e.png"
+                                width="738" height="490" alt="Python Tricks Dictionary Merge"></p>
 
-                        <p><img class="img-fluid rounded" src="https://pbs.twimg.com/media/EQ19bfQWsAAHh60?format=jpg&name=900x900"
+
+                        <p><img class="img-fluid rounded"
+                                src="https://pbs.twimg.com/media/EQ19bfQWsAAHh60?format=jpg&name=900x900"
                                 width="738" height="490" alt="Python Tricks Dictionary Merge"></p>
 
 

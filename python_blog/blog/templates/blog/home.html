@@ -1,22 +1,23 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    {% for post in posts %}
 
+
+    {% for post in posts %}
         <article class="media content-section">
             <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
             <div class="media-body">
                 <div class="article-metadata">
-                    <a class="mr-2" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
-                    <small class="text-muted">
-                        {{ post.date_posted|date:'d-F-Y --' }}{{ post.date_posted|time:'-- H:i:s' }}</small>
+                    <a class="mr-5" href="{% url 'user-posts' post.author.username %}">{{ post.author }}</a>
+                    <small class="text-body">
+                        {{ post.date_posted|date:'d-F-Y __' }}{{ post.date_posted|time:'__H:i:s____' }}</small>
                 </div>
                 <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
                 <p class="article-content">{{ post.content }}</p>
             </div>
         </article>
     {% endfor %}
-    {% if is_paginated %}
 
+    {% if is_paginated %}
         {% if page_obj.has_previous %}
             <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
             <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
