@@ -1,3 +1,6 @@
+<img width="937" alt="image" src="https://github.com/emilianstoyanov/python-blog/assets/68276889/57bb92ad-0f69-463d-ab94-c59f0c2ea6ed">
+
+
 # Python-Blog - Final Project of the course "Python Web Framework" at SoftUni
 ________________________________________________________
 
